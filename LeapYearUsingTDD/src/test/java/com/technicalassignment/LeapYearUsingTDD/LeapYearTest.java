@@ -13,4 +13,12 @@ public class LeapYearTest {
 		boolean actual = year.isLeapYear();
 		assertEquals(true, actual);
 	}
+	
+	@Test
+	public void isNotALeapYearIfYearIsDivisibleBy100()
+	{
+		Year year = new Year(1800);
+		boolean actual = year.isLeapYear();
+		assertEquals(false, actual);
+	}
 }
