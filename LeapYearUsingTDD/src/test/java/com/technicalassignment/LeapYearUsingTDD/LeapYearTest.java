@@ -21,4 +21,12 @@ public class LeapYearTest {
 		boolean actual = year.isLeapYear();
 		assertEquals(false, actual);
 	}
+	
+	@Test
+	public void isLeapYearIfYearIsDivisibleBy4()
+	{
+		Year year = new Year(2008);
+		boolean actual = year.isLeapYear();
+		assertEquals(true, actual);
+	}
 }
