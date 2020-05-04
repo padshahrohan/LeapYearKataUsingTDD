@@ -2,7 +2,7 @@ package com.technicalassignment.LeapYearUsingTDD;
 
 public class Year {
 	
-	int year;
+	private int year;
 	
 	public Year(int year) {
 		this.year = year;
@@ -23,5 +23,6 @@ public class Year {
 			return true;
 		
 		return false;
+		
 	}
 }
