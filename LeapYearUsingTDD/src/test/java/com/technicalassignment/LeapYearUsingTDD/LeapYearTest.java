@@ -29,4 +29,12 @@ public class LeapYearTest {
 		boolean actual = year.isLeapYear();
 		assertEquals(true, actual);
 	}
+	
+	@Test
+	public void isNotLeapYearIfYearIsNotDivisibleBy4()
+	{
+		Year year = new Year(2019);
+		boolean actual = year.isLeapYear();
+		assertEquals(false, actual);
+	}
 }
