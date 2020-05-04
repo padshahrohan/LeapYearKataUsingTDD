@@ -37,4 +37,12 @@ public class LeapYearTest {
 		boolean actual = year.isLeapYear();
 		assertEquals(false, actual);
 	}
+	
+	@Test
+	public void isNotLeapYearIfInputYearIsInvalid()
+	{
+		Year year = new Year(-2000);
+		boolean actual = year.isLeapYear();
+		assertEquals(false, actual);
+	}
 }
